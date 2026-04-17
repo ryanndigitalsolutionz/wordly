@@ -80,27 +80,6 @@ if (synonyms.length > 0) {
     console.log("Last one found:", lastSynonym);
 }
 
-const motivation = [
-    "History remembers the builders. The future remembers the founders. — Ryan Da Lion",
-    "Your only limit is your soul. — Gusteau",
-    "Code is like humor. When you have to explain it, it’s bad.",
-    "The best way to predict the future is to invent it."
-];
-
-function initHome() {
-    const randomQuote = motivation[Math.floor(Math.random() * motivation.length)];
-    display.innerHTML = `
-        <div class="home-hero">
-            <h3>Welcome, R.D.L</h3>
-            <p class="quote">"${randomQuote}"</p>
-            <small>Type a word above to start your deep dive.</small>
-        </div>
-    `;
-}
-
-// Call this at the very bottom of your script
-initHome();
-
 function toggleTheme() {
     const app = document.getElementById('app');
     // Swaps between glass effect and a solid dark theme
