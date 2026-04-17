@@ -14,8 +14,4 @@
 
 6. **Error handling (catch)** - Displays a red border and error message if the word isn’t found or fetch fails.
 
-7. **Extra features**
-
- . Synonyms: Logs the last synonym found.
-
- . Theme toggle: Switches between dark and glass effect backgrounds.
+PS: I had issues with adding the prolifics, synonyms and a light/dark theme switch, so I made a whole image as the background.
