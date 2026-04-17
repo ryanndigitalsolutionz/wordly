@@ -1,5 +1,5 @@
-###Wordly Summary###
-##JS Details##
+# Wordly Summary JavaScript #
+## JS Details ##
 1. I thought of popular dictionaries that have picture examples and researched if I could also make my Wordly website run the same way, so I linked the "Free Dictionary API" with Pixabay using a key so that pictures related to the meaning of the searched word are displayed.
 
 2. **Configuration object (config)** - Holds API base URLs and keys (pixabayKey for images, dictBase for dictionary). Keeps constants in one place for easy reuse.
