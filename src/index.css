@@ -1,0 +1,216 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Audiowide", sans-serif;
+  color: white;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wordly-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.wordly-app {
+  width: 90%;
+  max-width: 600px;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+
+.wordly-title {
+  margin-bottom: 1.5rem;
+}
+
+.search-form {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  gap: 10px;
+  font-family: "Iceland", sans-serif;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Iceland", sans-serif;
+}
+
+.search-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2ecc71;
+  color: white;
+  cursor: pointer;
+  font-family: "Iceland", sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.search-button:hover {
+  background-color: #27ae60;
+  transform: translateY(-2px);
+}
+
+.result-container {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.word-header {
+  margin-bottom: 1rem;
+}
+
+.word-header h2 {
+  margin-bottom: 0.4rem;
+}
+
+.pos {
+  font-family: "Iceland", sans-serif;
+  opacity: 0.8;
+}
+
+.definition,
+.example {
+  margin-top: 1rem;
+  font-family: "Iceland", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+.word-img {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.status {
+  font-family: "Iceland", sans-serif;
+  opacity: 0.8;
+}
+
+.error {
+  color: #ff6b6b;
+  font-family: "Iceland", sans-serif;
+}
+
+@media (max-width: 600px) {
+  .wordly-page {
+    padding: 1rem;
+  }
+
+  .wordly-app {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .search-form {
+    flex-direction: column;
+  }
+
+  .search-button {
+    width: 100%;
+  }
+}
+
+.word-result {
+  padding: 30px 20px 40px;
+}
+
+.word-header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.word-header h2 {
+  margin: 0 0 10px;
+}
+
+.pos {
+  display: block;
+  margin-top: 6px;
+  font-size: 1rem;
+}
+
+.definition-section {
+  margin-bottom: 28px;
+}
+
+.definition {
+  line-height: 1.8;
+  margin: 0;
+}
+
+.example-section {
+  margin: 30px 0;
+  padding: 10px 20px;
+}
+
+.example {
+  line-height: 1.7;
+  margin: 0;
+}
+
+.pronunciation {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.pronunciation p {
+  margin-bottom: 12px;
+}
+
+.pronunciation audio {
+  width: min(100%, 420px);
+}
+
+.image-section {
+  margin-top: 35px;
+}
+
+.word-img {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 14px;
+}
